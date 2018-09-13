@@ -1,10 +1,16 @@
 header
-	.navbar
-		+pad(null 0)
-	.navbar-brand
-		img 
-			max-height: 2rem
-	+media-breakpoint-up(md)
-		.navbar-brand
-			img 
-				max-height: 3rem
+	background: $xanh
+	nav
+		margin: 0 5rem
+		padding: 2rem 1rem
+#Tamdeptrai 
+	ul
+		li 
+			a 
+				margin: 0 .5rem
+				color: $whites
+				text-transform: uppercase
+				transition: 0.3s all ease-in-out
+				&:hover,&:focus,&:active
+					background: $whites
+					color: $amethyst
