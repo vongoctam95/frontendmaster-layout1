@@ -9,6 +9,24 @@ $(document).ready(function() {
     });
     // phan top sale
     $('.home-topsale .owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+    // phan top seller
+    $('.home-bestsalers .owl-carousel').owlCarousel({
             loop: false,
             margin: 10,
             nav: true,
@@ -18,10 +36,10 @@ $(document).ready(function() {
                     items: 1
                 },
                 600: {
-                    items: 2
+                    items: 1
                 },
                 1000: {
-                    items: 4
+                    items: 1
                 }
             }
         })
